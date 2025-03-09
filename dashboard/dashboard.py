@@ -8,7 +8,7 @@ sns.set(style='dark')
 
 st.title("🚴‍♂️ Dashboard Analisis Penyewaan Sepeda")
 
-df = pd.read_csv("main_data.csv")
+df = pd.read_csv("dashboard/main_data.csv")
 
 def create_weather_df(df):
     return df.groupby("weathersit")["cnt"].mean().reset_index()
